@@ -226,9 +226,6 @@
         NZgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="lblWarning.Content" xml:space="preserve">
-    <value>The\ current\ login\ data\ will\ only\ be\ available\ when\ the\n\ program\ is\ run\ for\ the\ first\ time\ and\ will\ not\ be\ available\ the\ second\ time,\ so\ either\ save\ this\ data\ to\ log\ in\ later\n\ or\ create\ your\ user\ when\ logging\ into\ the\ program\.</value>
-  </data>
   <metadata name="cuiFormDrag.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

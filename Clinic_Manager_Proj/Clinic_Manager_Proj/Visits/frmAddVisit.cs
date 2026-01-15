@@ -1,12 +1,8 @@
 ﻿using Clinic_Manager_Proj.Classes;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using CMS_BusinessLayer;
 using DVLD_Project.MainSettings;

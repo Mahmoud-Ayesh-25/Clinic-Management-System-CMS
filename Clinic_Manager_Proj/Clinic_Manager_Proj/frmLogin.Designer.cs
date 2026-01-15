@@ -36,9 +36,9 @@
             this.cuiPictureBox1 = new CuoreUI.Controls.cuiPictureBox();
             this.cuiPictureBox2 = new CuoreUI.Controls.cuiPictureBox();
             this.pnlAppointmants = new CuoreUI.Controls.cuiGradientPanel();
+            this.cbxRememberMe = new CuoreUI.Controls.cuiCheckbox();
             this.btnLogin = new CuoreUI.Controls.cuiButton();
             this.cuiFormDrag = new CuoreUI.Components.cuiFormDrag(this.components);
-            this.lblWarning = new CuoreUI.Controls.cuiLabel();
             this.pnlBtnClose.SuspendLayout();
             this.pnlAppointmants.SuspendLayout();
             this.SuspendLayout();
@@ -79,7 +79,7 @@
             // cuiLabel4
             // 
             this.cuiLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.cuiLabel4.Content = "Welcome\\ To\\n\\ Clinic\\ Managment\\ System\\n\\ \\(CMS\\)";
+            this.cuiLabel4.Content = "Welcome\\ To\\n\\ Clinic\\ Management\\ System\\n\\ \\(CMS\\)";
             this.cuiLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cuiLabel4.ForeColor = System.Drawing.Color.White;
             this.cuiLabel4.HorizontalAlignment = System.Drawing.StringAlignment.Center;
@@ -162,7 +162,7 @@
             // 
             // pnlAppointmants
             // 
-            this.pnlAppointmants.Controls.Add(this.lblWarning);
+            this.pnlAppointmants.Controls.Add(this.cbxRememberMe);
             this.pnlAppointmants.Controls.Add(this.btnLogin);
             this.pnlAppointmants.Controls.Add(this.cuiPictureBox2);
             this.pnlAppointmants.Controls.Add(this.cuiPictureBox1);
@@ -180,6 +180,31 @@
             this.pnlAppointmants.Rounding = new System.Windows.Forms.Padding(15);
             this.pnlAppointmants.Size = new System.Drawing.Size(476, 504);
             this.pnlAppointmants.TabIndex = 4;
+            // 
+            // cbxRememberMe
+            // 
+            this.cbxRememberMe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.cbxRememberMe.Checked = false;
+            this.cbxRememberMe.CheckedForeground = System.Drawing.Color.White;
+            this.cbxRememberMe.CheckedOutlineColor = System.Drawing.Color.White;
+            this.cbxRememberMe.CheckedSymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.cbxRememberMe.Content = "Remember me";
+            this.cbxRememberMe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbxRememberMe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxRememberMe.ForeColor = System.Drawing.Color.White;
+            this.cbxRememberMe.Location = new System.Drawing.Point(82, 335);
+            this.cbxRememberMe.MinimumSize = new System.Drawing.Size(16, 16);
+            this.cbxRememberMe.Name = "cbxRememberMe";
+            this.cbxRememberMe.OutlineStyle = true;
+            this.cbxRememberMe.OutlineThickness = 1F;
+            this.cbxRememberMe.Rounding = 4;
+            this.cbxRememberMe.ShowSymbols = true;
+            this.cbxRememberMe.Size = new System.Drawing.Size(112, 16);
+            this.cbxRememberMe.TabIndex = 23;
+            this.cbxRememberMe.Text = "cuiCheckbox1";
+            this.cbxRememberMe.UncheckedForeground = System.Drawing.Color.Empty;
+            this.cbxRememberMe.UncheckedOutlineColor = System.Drawing.Color.Gray;
+            this.cbxRememberMe.UncheckedSymbolColor = System.Drawing.Color.Empty;
             // 
             // btnLogin
             // 
@@ -227,20 +252,6 @@
             // 
             this.cuiFormDrag.TargetForm = this;
             // 
-            // lblWarning
-            // 
-            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
-            this.lblWarning.Content = resources.GetString("lblWarning.Content");
-            this.lblWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWarning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lblWarning.HorizontalAlignment = System.Drawing.StringAlignment.Center;
-            this.lblWarning.Location = new System.Drawing.Point(12, 399);
-            this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Size = new System.Drawing.Size(452, 70);
-            this.lblWarning.TabIndex = 23;
-            this.lblWarning.VerticalAlignment = System.Drawing.StringAlignment.Center;
-            this.lblWarning.Visible = false;
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,6 +281,6 @@
         private CuoreUI.Controls.cuiGradientPanel pnlAppointmants;
         private CuoreUI.Components.cuiFormDrag cuiFormDrag;
         private CuoreUI.Controls.cuiButton btnLogin;
-        private CuoreUI.Controls.cuiLabel lblWarning;
+        private CuoreUI.Controls.cuiCheckbox cbxRememberMe;
     }
 }

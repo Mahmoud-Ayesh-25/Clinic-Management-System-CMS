@@ -63,7 +63,7 @@
             this.lblDiagnosis = new CuoreUI.Controls.cuiLabel();
             this.cuiPictureBox16 = new CuoreUI.Controls.cuiPictureBox();
             this.lblSymptoms = new CuoreUI.Controls.cuiLabel();
-            this.cuiLabel1 = new CuoreUI.Controls.cuiLabel();
+            this.lblExID = new CuoreUI.Controls.cuiLabel();
             this.cuiPictureBox17 = new CuoreUI.Controls.cuiPictureBox();
             this.cuiPanel1.SuspendLayout();
             this.cuiPanel2.SuspendLayout();
@@ -440,7 +440,7 @@
             this.cuiPanel2.Controls.Add(this.lblDiagnosis);
             this.cuiPanel2.Controls.Add(this.cuiPictureBox16);
             this.cuiPanel2.Controls.Add(this.lblSymptoms);
-            this.cuiPanel2.Controls.Add(this.cuiLabel1);
+            this.cuiPanel2.Controls.Add(this.lblExID);
             this.cuiPanel2.Controls.Add(this.cuiPictureBox17);
             this.cuiPanel2.Location = new System.Drawing.Point(12, 326);
             this.cuiPanel2.Name = "cuiPanel2";
@@ -559,17 +559,17 @@
             this.lblSymptoms.TabIndex = 0;
             this.lblSymptoms.VerticalAlignment = System.Drawing.StringAlignment.Near;
             // 
-            // cuiLabel1
+            // lblExID
             // 
-            this.cuiLabel1.Content = "Examination\\ ID:";
-            this.cuiLabel1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cuiLabel1.ForeColor = System.Drawing.Color.White;
-            this.cuiLabel1.HorizontalAlignment = System.Drawing.StringAlignment.Near;
-            this.cuiLabel1.Location = new System.Drawing.Point(53, 12);
-            this.cuiLabel1.Name = "cuiLabel1";
-            this.cuiLabel1.Size = new System.Drawing.Size(314, 35);
-            this.cuiLabel1.TabIndex = 0;
-            this.cuiLabel1.VerticalAlignment = System.Drawing.StringAlignment.Center;
+            this.lblExID.Content = "Examination\\ ID:";
+            this.lblExID.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExID.ForeColor = System.Drawing.Color.White;
+            this.lblExID.HorizontalAlignment = System.Drawing.StringAlignment.Near;
+            this.lblExID.Location = new System.Drawing.Point(53, 12);
+            this.lblExID.Name = "lblExID";
+            this.lblExID.Size = new System.Drawing.Size(314, 35);
+            this.lblExID.TabIndex = 0;
+            this.lblExID.VerticalAlignment = System.Drawing.StringAlignment.Center;
             // 
             // cuiPictureBox17
             // 
@@ -637,7 +637,7 @@
         private CuoreUI.Controls.cuiLabel lblDiagnosis;
         private CuoreUI.Controls.cuiPictureBox cuiPictureBox16;
         private CuoreUI.Controls.cuiLabel lblSymptoms;
-        private CuoreUI.Controls.cuiLabel cuiLabel1;
+        private CuoreUI.Controls.cuiLabel lblExID;
         private CuoreUI.Controls.cuiPictureBox cuiPictureBox17;
     }
 }

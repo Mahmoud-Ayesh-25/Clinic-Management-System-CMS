@@ -35,6 +35,9 @@
   <PropertyGroup>
     <ApplicationIcon>ChatGPT Image Dec 25, 2025, 03_28_29 PM.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CuoreUI, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CuoreUI.Winforms.2025.10.18.1\lib\net472\CuoreUI.dll</HintPath>
@@ -135,12 +138,6 @@
     </Compile>
     <Compile Include="frmMainFormForManage.Designer.cs">
       <DependentUpon>frmMainFormForManage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmTest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTest.Designer.cs">
-      <DependentUpon>frmTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Logs\Controls\ctrlLogCard.cs">
       <SubType>UserControl</SubType>
@@ -381,9 +378,6 @@
     <EmbeddedResource Include="frmMainFormForManage.resx">
       <DependentUpon>frmMainFormForManage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTest.resx">
-      <DependentUpon>frmTest.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Logs\Controls\ctrlLogCard.resx">
       <DependentUpon>ctrlLogCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -488,6 +482,7 @@
     <EmbeddedResource Include="Visits\frmShowVisitInfo.resx">
       <DependentUpon>frmShowVisitInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -4,14 +4,9 @@ using CMS_BusinessLayer;
 using CuoreUI.Controls;
 using DVLD_Project.MainSettings;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Clinic_Manager_Proj.People
@@ -38,7 +33,10 @@ namespace Clinic_Manager_Proj.People
                     person.ImagePath = "";
                 }
                 catch (Exception e)
-                { MessageBox.Show($"Error: {e.ToString()}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                {
+                    MessageBox.Show($"Error: {e.ToString()}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    clsMisc.CreateEventLog(e.Message);
+                }
             }
 
             if (pbxPersonImage.ImageLocation != null)

@@ -24,7 +24,7 @@ namespace Clinic_Manager_Proj.Visits.Controls
 
             if (examination == null) return false;
 
-            lblID.Content = $"Examination ID: {examination.ExaminationID}";
+            lblExID.Content = $"Examination ID: {examination.ExaminationID}";
             lblSymptoms.Content = $"Symptoms: {examination.Symptoms}";
             lblDiagnosis.Content = $"Diagnosis: {examination.Diagnosis}";
             lblNotes.Content = $"Notes: {examination.Notes}";

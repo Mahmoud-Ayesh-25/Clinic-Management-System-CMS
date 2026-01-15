@@ -3,13 +3,6 @@ using Clinic_Manager_Proj.Settings.Notifications;
 using Clinic_Manager_Proj.Settings.PaymentMethods;
 using Clinic_Manager_Proj.Users;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using CMS_BusinessLayer;
 

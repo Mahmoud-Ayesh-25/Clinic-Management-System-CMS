@@ -1,13 +1,6 @@
-﻿using CMS_DataLayer;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data;
 using System.IO;
-using System.Linq;
-using System.Net;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CMS_BusinessLayer
@@ -25,7 +18,7 @@ namespace CMS_BusinessLayer
         public string LastName { get; set; }
         public string FullName { get { return _GetFullName(); } }
         public DateTime DateOfBirth { get; set; }
-        public int Age { get { return (DateOfBirth != new DateTime()) ? (DateTime.Now.Year - DateOfBirth.Year) : 0; } }
+        public byte Age { get { return (byte)((DateOfBirth != new DateTime()) ? (DateTime.Now.Year - DateOfBirth.Year) : 0); } }
         public byte Gender { get; set; }
         public string GenderString { get; }
         public string Phone {  get; set; }
@@ -186,6 +179,7 @@ namespace CMS_BusinessLayer
                     catch (Exception ex)
                     {
                         MessageBox.Show($"Error: {ex.ToString()}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        CMS_DataLayer.clsDataAccessSettings.CreateEventLog(ex.Message);
                     }
                 }
             }

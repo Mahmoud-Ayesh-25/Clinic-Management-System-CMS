@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CMS_DataLayer
 {
@@ -36,7 +31,7 @@ namespace CMS_DataLayer
                             }
                         }
                     }
-                    catch { }
+                    catch (Exception ex) { clsDataAccessSettings.CreateEventLog(ex.Message); }
                 }
             }
 
@@ -86,7 +81,7 @@ namespace CMS_DataLayer
                             }
                         }
                     }
-                    catch { }
+                    catch (Exception ex) { clsDataAccessSettings.CreateEventLog(ex.Message); }
                 }
             }
 
@@ -110,7 +105,7 @@ namespace CMS_DataLayer
                         object result = command.ExecuteScalar();
                         IsFound = (result != null);
                     }
-                    catch { }
+                    catch (Exception ex) { clsDataAccessSettings.CreateEventLog(ex.Message); }
                 }
             }
 
@@ -160,7 +155,7 @@ namespace CMS_DataLayer
                             }
                         }
                     }
-                    catch { }
+                    catch (Exception ex) { clsDataAccessSettings.CreateEventLog(ex.Message); }
                 }
             }
 
@@ -213,7 +208,7 @@ namespace CMS_DataLayer
                             DoctorID = id;
                         }
                     }
-                    catch { }
+                    catch (Exception ex) { clsDataAccessSettings.CreateEventLog(ex.Message); }
                 }
             }
 
@@ -271,7 +266,7 @@ namespace CMS_DataLayer
                         int rowsEffected = command.ExecuteNonQuery();
                         IsUpdated = (rowsEffected > 0);
                     }
-                    catch { }
+                    catch (Exception ex) { clsDataAccessSettings.CreateEventLog(ex.Message); }
                 }
             }
 
@@ -299,7 +294,7 @@ namespace CMS_DataLayer
                         int rowsEffected = command.ExecuteNonQuery();
                         IsUpdated = (rowsEffected > 0);
                     }
-                    catch { }
+                    catch (Exception ex) { clsDataAccessSettings.CreateEventLog(ex.Message); }
                 }
             }
 
@@ -327,7 +322,7 @@ namespace CMS_DataLayer
                         int rowsEffected = command.ExecuteNonQuery();
                         IsUpdated = (rowsEffected > 0);
                     }
-                    catch { }
+                    catch (Exception ex) { clsDataAccessSettings.CreateEventLog(ex.Message); }
                 }
             }
 
@@ -353,7 +348,7 @@ namespace CMS_DataLayer
                         int rowsEffected = command.ExecuteNonQuery();
                         IsDeleted = (rowsEffected > 0);
                     }
-                    catch { }
+                    catch (Exception ex) { clsDataAccessSettings.CreateEventLog(ex.Message); }
                 }
             }
 

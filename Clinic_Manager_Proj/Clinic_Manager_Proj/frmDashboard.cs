@@ -11,19 +11,11 @@ using Clinic_Manager_Proj.Visits;
 using CMS_BusinessLayer;
 using DVLD_Project;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
-using System.IO;
-using System.Linq;
 using System.Media;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Clinic_Manager_Proj
 {

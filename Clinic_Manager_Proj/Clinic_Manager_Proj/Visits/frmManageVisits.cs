@@ -6,13 +6,8 @@ using CMS_BusinessLayer;
 using DVLD_Project;
 using DVLD_Project.MainSettings;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Clinic_Manager_Proj.Visits

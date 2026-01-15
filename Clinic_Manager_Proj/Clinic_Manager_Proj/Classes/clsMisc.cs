@@ -1,11 +1,9 @@
 ﻿using CMS_BusinessLayer;
 using System;
-using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Clinic_Manager_Proj.Classes
@@ -48,6 +46,7 @@ namespace Clinic_Manager_Proj.Classes
                 catch (Exception e)
                 {
                     MessageBox.Show($"Error: {e.ToString()}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    clsMisc.CreateEventLog(e.Message);
                     return false;
                 }
             }
@@ -72,6 +71,7 @@ namespace Clinic_Manager_Proj.Classes
                 catch (Exception e)
                 {
                     MessageBox.Show($"Error: {e.ToString()}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    clsMisc.CreateEventLog(e.Message);
                     return false;
                 }
             }
@@ -91,6 +91,18 @@ namespace Clinic_Manager_Proj.Classes
             log.UserID = clsProgramSettings.CurrentUser.UserID;
 
             return log.Save();
+        }
+
+        public static void CreateEventLog(string message)
+        {
+            string appSource = "CMS";
+
+            if (!EventLog.Exists(appSource))
+            {
+                EventLog.CreateEventSource(appSource, "Application");
+            }
+
+            EventLog.WriteEntry(appSource, message, EventLogEntryType.Error);
         }
     }
 }

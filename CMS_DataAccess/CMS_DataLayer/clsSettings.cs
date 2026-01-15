@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CMS_DataLayer
 {
@@ -36,7 +30,7 @@ namespace CMS_DataLayer
                             }
                         }
                     }
-                    catch { }
+                    catch (Exception ex) { clsDataAccessSettings.CreateEventLog(ex.Message); }
                 }
             }
 
@@ -63,7 +57,7 @@ namespace CMS_DataLayer
                         int result = command.ExecuteNonQuery();
                         IsUpdated = (result > 0);
                     }
-                    catch { }
+                    catch (Exception ex) { clsDataAccessSettings.CreateEventLog(ex.Message); }
                 }
             }
 
