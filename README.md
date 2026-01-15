@@ -50,7 +50,7 @@ This project was developed to:
 ## Important Notes
 1. The project does not contain database files. If you want to download the database files, you will find them at this link: [Database](https://www.dropbox.com/scl/fo/d7y0lyx61puw193hdvbia/ALiisLNOgprPd9LBtFw6pss?rlkey=f1qhvnm5sako3k95pl2mjttkm&st=xqjzl0gn&dl=0).
 2. Put the database in \bin\DB or modify the connection string and place it wherever you want.
-3. If you only want to try the program, you can download the setup file and install the program on your device with LocalDB. It will work directly (LocalDB is included with the setup file, you won't need to download it separately). You can download the setup file from this link: [Setup File](https://www.dropbox.com/scl/fo/6750svmes09sfe098qq0c/ALmJ3iOblYhRjUIcSVA3Nm0?rlkey=5w7ys1p6awc6fzaig7m5lbffh&st=xjws96wm&dl=0).
+3. If you only want to try the program, you can download the setup file and install the program on your device with LocalDB. It will work directly (LocalDB is included with the setup file, you won't need to download it separately). You can download the setup file from this link: [Setup File](https://www.dropbox.com/scl/fo/6750svmes09sfe098qq0c/ALmJ3iOblYhRjUIcSVA3Nm0?rlkey=5w7ys1p6awc6fzaig7m5lbffh&st=c90fjng0&dl=0).
 
 ##### You can login using Username: admin - Password: 1234
 
